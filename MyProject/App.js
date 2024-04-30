@@ -7,8 +7,8 @@ const App = () => {
   const [selectedProduct, setSelectedProduct] = React.useState(null);
 
   const products = [
-    { id: 1, name: 'Hamburguer Clássico', description: 'Delicioso hambúrguer com queijo, alface e tomate.', price: 9.99, image: 'https://example.com/hamburguer.jpg' },
-    { id: 2, name: 'Hamburguer Vegetariano', description: 'Hambúrguer vegetariano com abacate, cogumelos e rúcula.', price: 8.99, image: 'https://example.com/vegetarian-burger.jpg' },
+    { id: 1, name: 'Hamburguer Clássico', description: 'Delicioso hambúrguer com queijo, alface e tomate.', price: 9.99, calories: 500, rating: 4.5, image: 'https://example.com/hamburguer.jpg' },
+    { id: 2, name: 'Hamburguer Vegetariano', description: 'Hambúrguer vegetariano com abacate, cogumelos e rúcula.', price: 8.99, calories: 400, rating: 4.2, image: 'https://example.com/vegetarian-burger.jpg' },
     // Adicione mais produtos conforme necessário
   ];
 
