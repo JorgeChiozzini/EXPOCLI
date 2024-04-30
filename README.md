@@ -1,1 +1,1 @@
-# EXPOCLI
+# Estudo de desenvolvimento de componentes funcionais mobile usando React Native com Expo
