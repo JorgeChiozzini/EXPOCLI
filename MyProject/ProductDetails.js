@@ -1,52 +1,7 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity, Modal } from 'react-native';
 
-const ProductDetails = ({ product, onClose }) => {
-  const [quantity, setQuantity] = React.useState(1);
-
-  const handleAddToCart = () => {
-    // Adicionar lógica para adicionar o produto ao carrinho
-    console.log(`Adicionando ${quantity} ${product.name} ao carrinho`);
-  };
-
-  return (
-    <Modal
-      animationType="slide"
-      transparent={true}
-      visible={true}
-      onRequestClose={onClose}
-    >
-      <View style={styles.centeredView}>
-        <View style={styles.modalView}>
-          <Image source={{ uri: product.image }} style={styles.image} />
-          <Text style={styles.title}>{product.name}</Text>
-          <Text style={styles.description}>{product.description}</Text>
-          <Text style={styles.calories}>Calorias: {product.calories}</Text>
-          <Text style={styles.rating}>Avaliação: {product.rating}</Text>
-          <Text style={styles.price}>R${product.price.toFixed(2)}</Text>
-          <View style={styles.quantityContainer}>
-            <TouchableOpacity onPress={() => setQuantity(quantity > 1 ? quantity - 1 : 1)} style={styles.quantityButton}>
-              <Text style={styles.quantityButtonText}>-</Text>
-            </TouchableOpacity>
-            <Text style={styles.quantity}>{quantity}</Text>
-            <TouchableOpacity onPress={() => setQuantity(quantity + 1)} style={styles.quantityButton}>
-              <Text style={styles.quantityButtonText}>+</Text>
-            </TouchableOpacity>
-          </View>
-          <TouchableOpacity onPress={handleAddToCart} style={styles.actionButton}>
-            <Text style={styles.actionButtonText}>Adicionar ao Carrinho</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={onClose} style={[styles.actionButton, { backgroundColor: 'green' }]}>
-            <Text style={styles.actionButtonText}>Comprar</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={onClose} style={[styles.actionButton, { backgroundColor: 'red' }]}>
-            <Text style={styles.actionButtonText}>Fechar</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
-    </Modal>
-  );
-};
+S
 
 const styles = StyleSheet.create({
   centeredView: {
