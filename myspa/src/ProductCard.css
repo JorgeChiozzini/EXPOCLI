@@ -1,0 +1,46 @@
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    transition: background-color 0.3s ease; /* Adicione a transição de cor */
+  }
+  
+  .product-card:hover {
+    background-color: #f0f0f0; /* Altere a cor de fundo ao passar o mouse */
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .product-details {
+    margin-top: 10px;
+  }
+  
+  .product-details h3 {
+    margin: 0;
+  }
+  
+  .product-details p {
+    margin: 5px 0;
+  }
+  
+  .price {
+    float: left; /* Coloque o preço no canto esquerdo */
+  }
+  
+  .product-details button {
+    float: right; /* Coloque o botão no canto direito */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .product-details button:hover {
+    background-color: #0056b3;
+  }
+  
